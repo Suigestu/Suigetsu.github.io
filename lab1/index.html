@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симулятор міста</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Моє місто</h1>
+        <nav>
+            <button id="btn-city">Моє місто</button>
+            <button id="btn-build">Будівництво</button>
+            <button id="btn-resources">Ресурси міста</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="city-view">
+            <div id="city-grid"></div>
+        </section>
+
+        <section id="construction" class="hidden">
+            <h2>Будівництво</h2>
+            <select id="building-type">
+                <option value="house">Будинок</option>
+                <option value="road">Дорога</option>
+                <option value="factory">Підприємство</option>
+            </select>
+            <button id="place-building">Додати об'єкт</button>
+        </section>
+
+        <section id="resources" class="hidden">
+            <h2>Ресурси міста</h2>
+            <p>Бюджет: <span id="budget">10000</span> грн</p>
+            <p>Матеріали: <span id="materials">500</span> од.</p>
+            <p>Будівельники: <span id="workers">10</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
